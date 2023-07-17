@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qrcode</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #009FB7;
+            padding: 20px;
+            border-radius: 10px;
+            color: antiquewhite;
+        }
+        img{
+            width: 35%;
+            height: 25vh;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Vide o aula referente a esse projeto
+         https://www.youtube.com/watch?v=E1gPN6LmH00&ab_channel=Jo%C3%A3oTinti
+        
+         para criar o QRcode utiizamos o goolge charts onde é um API para criar QRCode o endereço é:
+
+         https://developers.google.com/chart/infographics/docs/qr_codes?hl=en 
+        
+        -->
+        <div class="container">
+
+            <h1>Crie Seu QRCODE</h1>
+            <h3>Cole o link do site dentro da area pra gerar o QRCODE</h3>
+            <textarea maxlength="500" rows="10"></textarea>
+            <br>
+            <button onclick="GerarQrcode()">Gerar QRCODE</button>
+            <br>
+            <img  id="QRcodeImage">
+            <script src="./Scripty.js"></script>
+        </div>
+</body>
+</html>
